@@ -10,6 +10,7 @@ public:
   bool wasPressed();
   bool stateChanged();
   bool uniquePress();
+  bool uniqueRelease();
   bool longPress();
   unsigned char multiclick();
   unsigned long continuousPressTime();
