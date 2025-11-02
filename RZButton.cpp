@@ -38,6 +38,10 @@ bool RZButton::uniquePress() {
 	return stateChanged() && lastStatus;
 }
 
+bool RZButton::uniqueRelease(){
+	return stateChanged() && !lastStatus;
+}
+
 bool RZButton::longPress() {
 	bool currentStatus = isPressed();
 	if (currentStatus && firstPress == 0)
